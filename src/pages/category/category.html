@@ -1,0 +1,152 @@
+<!--
+  Generated template for the CategoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header no-border>
+  <ion-navbar>
+    <span>{{header}}</span>
+
+    <ion-buttons end>
+      <ion-icon class="searchIcon" name="search"></ion-icon>
+      <ion-icon class="cartIcon" name="cart"></ion-icon>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content>
+  <div class="mainDiv">
+    <img class="mainImg" [src]="img" alt="photo">
+    <!-- <div class="overlay">
+
+    </div> -->
+
+    <div class="overlay">
+      <!-- <div> -->
+      <ion-row style="margin-top: 13vh;">
+        <ion-col col-2>
+          <ion-icon class="back" name="arrow-back" (tap)="back()"></ion-icon>
+
+        </ion-col>
+        <ion-col col-3 style=" margin-top: 1.5vh;">
+          <span class="topText">{{header}}</span>
+
+        </ion-col>
+        <ion-col col-3>
+
+        </ion-col>
+        <ion-col col-4 text-end style="    margin-top: 1vh;            ">
+          <!-- <ion-buttons end class="top"> -->
+          <ion-icon class="topIcon" name="search"></ion-icon>
+          <ion-icon class="topIcon" name="cart"></ion-icon>
+
+          <!-- </ion-buttons> -->
+        </ion-col>
+
+      </ion-row>
+      <!-- <span >
+        <ion-icon class="back"  name="arrow-back" (tap)="back()"></ion-icon>
+      </span>
+      <span class="topText">{{header}}</span>
+
+      <ion-buttons end class="top">
+        <ion-icon class="topIcon" name="search"></ion-icon>
+        <ion-icon class="topIcon" name="cart"></ion-icon>
+  
+      </ion-buttons> -->
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <ion-segment [(ngModel)]="Segment">
+    <ion-segment-button class="segmentbtn" value="First">
+      Meats
+    </ion-segment-button>
+    <ion-segment-button class="segmentbtn" value="Second">
+      Fish
+    </ion-segment-button>
+
+  </ion-segment>
+  <div class="" [ngSwitch]="Segment">
+
+    <div *ngSwitchCase="'First'">
+      <ion-row>
+        <ion-col class="segmentCol" col-6 text-center *ngFor="let item of products; let i=index">
+          <ion-card padding class="animated fadeIn">
+            <ion-row class="image-section">
+              <img [src]="item.product_img" alt="productImage">
+            </ion-row>
+            <ion-row>
+              <p class="title">{{item.name}}</p>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <p>{{item.weight}}</p>
+
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-4>
+                <p>{{item.price}}</p>
+
+              </ion-col>
+              <ion-col col-6>
+
+              </ion-col>
+              <ion-col col-2>
+                <ion-icon class="add" name="add-circle"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div *ngSwitchCase="'Second'">
+      <ion-row>
+        <ion-col class="segmentCol" col-6 text-center *ngFor="let item of products; let i=index">
+          <ion-card padding class="animated fadeIn">
+            <ion-row class="image-section">
+              <img [src]="item.product_img" alt="productImage">
+            </ion-row>
+            <ion-row>
+              <p class="title">{{item.name}}</p>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <p>{{item.weight}}</p>
+
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-4>
+                <p>{{item.price}}</p>
+
+              </ion-col>
+              <ion-col col-6>
+
+              </ion-col>
+              <ion-col col-2>
+                <ion-icon class="add" name="add-circle"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+</ion-content>
+<ion-footer class="footer">
+  <ion-row>
+    <ion-col col-6 text-center>
+      <span class="footer-text"> Sort by </span>
+    </ion-col>
+    <ion-col col-6 text-center>
+      <span class="footer-text"> Filter </span>
+
+    </ion-col>
+  </ion-row>
+</ion-footer>

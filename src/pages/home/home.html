@@ -1,0 +1,47 @@
+<ion-header  no-border >
+  <ion-navbar>
+      <ion-icon class="menuIcon" name="menu"></ion-icon>
+     
+      <ion-buttons end>
+        <ion-icon class="searchIcon" name="search"></ion-icon>
+          <ion-icon class="cartIcon" name="cart"></ion-icon>
+
+        </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<div class="topSlider">
+    <ion-slides pager="true">
+        <ion-slide>
+        
+            <img class="slide-image" src="../../assets/imgs/download.jpg" alt="first Slide ">
+       
+      
+    
+        </ion-slide>
+        <ion-slide>
+         
+                <img class="slide-image" src="../../assets/imgs/download (1).jpg" alt="second Slide ">
+             
+      
+        
+        </ion-slide>
+        <ion-slide>
+     
+                <img class="slide-image" src="../../assets/imgs/thirdslide.jpg" alt="third Slide ">
+    
+        </ion-slide>
+      </ion-slides>
+</div>
+  <ion-card>
+      <ion-row >
+    <ion-col col-6 *ngFor="let cat of cateogries" (tap)="goToCategory(cat)">
+      <img class="cateogryImg" [src]="cat.category_img" alt="photo">
+      <span class="catName">{{cat.name}}</span>
+    </ion-col>
+  
+  </ion-row>
+  </ion-card>
+
+ </ion-content>

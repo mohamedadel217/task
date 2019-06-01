@@ -1,0 +1,157 @@
+page-category {
+    .toolbar-background {
+        background-color: transparent !important;
+      }
+      .searchIcon{
+        padding-right: 5vw;
+      font-size: 2rem;
+
+    }
+    .cartIcon{
+      padding-right: 5vw;
+
+      font-size: 2rem;
+  }
+//   .content-md{
+//     // background: url('../../assets/imgs/download.jpg') no-repeat
+//    }
+   .segment-md .segment-button  {
+    color: black !important;
+   }
+   .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+    border-color:#f95f5d !important;
+
+   }
+
+  .image-section {
+    // margin-top: 2%;
+    // margin-left: 2vw;
+    // height: 30vh;
+    img {
+        width: 50vw !important;
+        height: 23vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-height: 100% !important;
+    }
+}
+ion-card{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height:auto;
+    margin:0 !important;
+    text-align: center;
+    box-shadow: 1px !important;
+    // border: 1px red !important;
+    // border-style:  !important;
+}
+.title{
+    margin-top: 0.7rem !important;
+    font-size: 2.4rem !important;
+    font-weight: bold !important;
+    margin-left: 2vw !important;
+}
+.add{
+    color: #d2d2d2;
+    font-size: 2.4rem;
+}
+.segmentCol{
+    padding: 0!important;
+}
+.footer{
+background: #f95f5d;
+height: 5vh;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+
+}
+.footer-text{
+    font-size: 1.8rem;
+    color: white;
+}
+.overlay{
+    width: 100%;
+    height: 44.5vh;
+    position: absolute;
+    z-index: 99;
+    /* bottom: 0px; */
+    opacity: 0.3;
+    background: #000;
+    color: #fff;
+    margin-top: -45vh;
+}
+.cover{
+        // background-image: url('https://media.mnn.com/assets/images/2016/05/Fresh-fruit-pretty.jpg.653x0_q80_crop-smart.jpg');
+        // background-size: cover;
+        // background-position: center center;
+        // background-repeat: no-repeat;
+}
+.mainImg{
+    // pointer-events: none;
+    // // position: absolute;
+    // // width: 100%;
+    // // height: 100%;
+    // z-index: -1;
+    //     background-size: cover;
+        // content:'Here is some text..';
+        // color:#fff;
+        // position:absolute;
+        // width:100%; height:100%;
+        // top:0; left:0;
+        // background:rgba(0,0,0,0.6);
+        // opacity:0;
+        //  position: absolute;
+        width: 100%; height:100%;
+        top:0; left:0;
+        background:rgba(0,0,0,0.6);
+        opacity: 1;
+        transition: all 1s;
+
+}
+.mainDiv{
+    display: inline-block;
+    overflow: hidden;
+    // position: relative;
+    width: 100%;
+    // : black;
+    // opacity: .5;
+    
+}
+ 
+.topText{
+    // position: absolute;
+    // margin-top: -38vh;
+    margin-left: 6vw;
+    font-weight: bold;
+    color: white !important;
+}
+.topIcon{
+    // position: absolute;
+    // margin-top: -38vh;
+    // margin-left: 10vw;
+    // font-weight: bold;
+    color: white;
+    padding-right: 5vw;
+    font-size: 2.5rem;
+}
+.top{
+        //  position: absolute;
+        // margin-top: -38vh;
+        margin-left: 79vw;
+        font-weight: bold;
+        color: white;
+ 
+ }
+ .back{
+    // position: absolute;
+    margin-top: 1vh;
+    margin-left: 4vw;
+    font-weight: bold;
+    color: white;
+    font-size: 3rem;
+
+ }
+}
+ 

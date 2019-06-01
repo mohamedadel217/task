@@ -1,0 +1,54 @@
+page-home {
+    .toolbar-background {
+        background-color: white !important;
+      }
+      .menuIcon{
+          margin-left: 2vw;
+          font-size: 2rem;
+      }
+      .searchIcon{
+          padding-right: 5vw;
+        font-size: 2rem;
+
+      }
+      .cartIcon{
+        padding-right: 5vw;
+
+        font-size: 2rem;
+    }
+    .topSlider{
+        width: 100%;
+        height: 26vh;
+    }
+    .swiper-slide img {
+        height: 200px !important;
+        width: 100%;
+    }
+.cateogryImg{
+    border-radius: 5px;
+    // max-width: 80%;
+}
+.catName{
+    font-weight: bold;
+    color: black;
+    margin-top: -3vh;
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: -21vw;
+
+}
+ion-card{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height:auto;
+    margin:0 !important;
+    text-align: center;
+    box-shadow: none !important;
+    // border: 1px red !important;
+    // border-style:  !important;
+}
+.swiper-pagination-bullet-active{
+    background-color:  white;
+ }
+}
